@@ -21,9 +21,35 @@ $$
 `θ `after observing the data `D`. It combines the prior probability and the likelihood.
 
 
+## Stochastic Program
+
+Joint distribution of latent variables and data.
+
+$$
+\Pr(\theta, y) = \Pr(y \mid \theta) \Pr(\theta)
+$$
+
+
+## Prior Distribution
+
+Quantifies the uncertainty in latent variables
+
+
+## Likelihood Function
+
+Conditions our model on the observed data
+
+## Conjugacy
+
+Refers to a situation where the posterior distribution of a parameter, given a prior distribution and the likelihood of observed data, is in the same family as the prior distribution.
+
+
 ## Uncommon terminology common in Probabilistic Programming
 
 - Stochastic: used to describe processes, systems, or variables that are inherently random or probabilistic in nature. In contrast to deterministic processes, where outcomes are precisely determined by initial conditions, stochastic processes involve some level of unpredictability and randomness
 
 - Stochastic vs. Deterministic: In deterministic models, the outcome is fully determined by the initial conditions and the system's rules. In stochastic models, even with known initial conditions and rules, the outcome is not certain and can vary due to random influences.
 
+## ESL
+
+- Latent: Present but not visible, apparent, or activated; existing as potential. something which is hidden and not obvious at the moment, but which may develop further in the future
