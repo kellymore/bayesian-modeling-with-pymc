@@ -1,6 +1,6 @@
-import pymc3 as pm
-import numpy as np
+import pymc as pm
 import matplotlib.pyplot as plt
+import arviz as az  # Import ArviZ for plotting
 
 # Simulated data: 10 coin tosses with 7 heads and 3 tails
 observed_data = [1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
@@ -14,11 +14,11 @@ with pm.Model() as model:
     y = pm.Bernoulli('y', p=theta, observed=observed_data)
     
     # Perform Bayesian inference
-    trace = pm.sample(1000, return_inferencedata=False)
+    trace = pm.sample(1000, return_inferencedata=True)
 
-# Plot the posterior distribution
-pm.traceplot(trace)
+# Plot the posterior distribution using ArviZ
+az.plot_trace(trace)
 plt.show()
 
 # Print a summary of the posterior distribution
-print(pm.summary(trace))
+print(az.summary(trace))
