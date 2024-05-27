@@ -52,9 +52,9 @@ This will display the posterior distribution of `θ` (the probability of heads) 
 - We define a PyMC3 model using a context manager (with `pm.Model()` as model).
 - Prior: We use a Beta distribution with parameters 
 
-$$$
+$$
 \alpha = 1 \quad \text{and} \quad \beta = 1
-$$$
+$$
 
 which is a uniform prior for the probability of heads (θ).
 
