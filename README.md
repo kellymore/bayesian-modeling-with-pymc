@@ -18,10 +18,10 @@ For common defitions using this approach visit the [DEFINITIONS.md](DEFINITIONS.
 
 ## Running the coin_flip.py Script
 
-To run the script, make sure you have pymc3 and matplotlib installed. You can install them using pip:
+To run the script, make sure you have `pymc`, `arviz`, and `matplotlib` installed.
 
 ```
-pip install pymc3 matplotlib
+pip install pymc arviz matplotlib
 ```
 
 Then, run the script:
@@ -32,16 +32,14 @@ python coin_flip.py
 
 This will display the posterior distribution of `θ` (the probability of heads) and print a summary, which includes statistics like the mean, standard deviation, and credible intervals of the posterior distribution.
 
-This example introduces students to the core concepts of Bayesian inference using a simple coin flip model, making it an accessible starting point for understanding probabilistic programming with PyMC.
-
 
 ### Explanation
 
 1. Import Libraries:
 
-- pymc3 for Bayesian modeling.
-- numpy for numerical operations (although not used in this simple example).
-- matplotlib.pyplot for plotting.
+- `pymc` for Bayesian modeling.
+- `matplotlib.pyplot` for plotting.
+- `arviz` for plotting and summarizing the results.
 
 
 2. Simulated Data:
@@ -68,5 +66,6 @@ which is a uniform prior for the probability of heads (θ).
 
 5. Plot and Summary:
 
-- We use `pm.traceplot(trace)` to visualize the posterior distribution.
-We print a summary of the posterior distribution using `pm.summary(trace)`.
+- We use `az.plot_trace(trace)` to visualize the posterior distribution.
+
+- We print a summary of the posterior distribution using `az.plot_trace(trace)`.
