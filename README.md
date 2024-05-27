@@ -6,12 +6,17 @@ Probabilistic programming is a paradigm that combines the techniques of probabil
 
 ## Bayesian Modeling with PyMC
 
-Bayes' theorem provides the mathematical framework for updating beliefs
+Bayes' theorem provides the mathematical framework for updating beliefs.
+
+<br>
+<br>
 
 $$
 P(\theta \mid D) = \frac{P(D \mid \theta) P(\theta)}{P(D)}
 $$
 
+<br>
+<br>
 
 For common defitions using this approach visit the [DEFINITIONS.md](DEFINITIONS.md) file.
 
@@ -50,11 +55,15 @@ This will display the posterior distribution of `θ` (the probability of heads) 
 3. Model Definition:
 
 - We define a PyMC3 model using a context manager (with `pm.Model()` as model).
-- Prior: We use a Beta distribution with parameters 
+- Prior: We use a Beta distribution with parameters
+
+<br>
 
 $$
 \alpha = 1 \quad \text{and} \quad \beta = 1
 $$
+
+<br>
 
 which is a uniform prior for the probability of heads (θ).
 
