@@ -18,6 +18,9 @@ $$
 
 For common defitions using this approach visit the [DEFINITIONS.md](DEFINITIONS.md) file.
 
+## About PyMC
+
+PyMC is used for fitting Bayes' statistical models primarily with Markov chain Monte Carlo. PyMC strives to make Bayesian modeling as simple and painless as possible, allowing users to focus on their problem rather than the methods. Visit the [PyMC](https://www.pymc.io/welcome.html) docs to learn more. 
 
 ## Running the coin_flip.py Script
 
