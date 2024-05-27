@@ -54,7 +54,7 @@ This will display the posterior distribution of `θ` (the probability of heads) 
 
 3. Model Definition:
 
-- We define a PyMC3 model using a context manager (with `pm.Model()` as model).
+- We define a PyMC model using a context manager (with `pm.Model()` as model).
 - Prior: We use a Beta distribution with parameters
 
 <br>
